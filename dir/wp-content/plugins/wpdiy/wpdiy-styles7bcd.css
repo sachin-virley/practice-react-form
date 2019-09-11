@@ -1,0 +1,161 @@
+/*
+ * Styles for the WPDIY Plugin
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.element-invisible {
+  text-indent: -9999em;
+  outline: 0;
+}
+
+.super-header ul {
+	margin: 0;
+}
+
+
+/* ****************************************************
+ * Super header
+ * ************************************************** */
+
+body {
+	/* Account for the height of the super-header */
+	margin-top: 58px!important;
+}
+
+.super-header {
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+  background: black;
+}
+
+.super-header .wrapper {
+	box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  height: 58px;
+	border-bottom: 1px solid #2b2b2b;
+	padding: 10px;
+	text-align: center;
+}
+
+.super-heading {
+	display: none;
+}
+@media screen and (min-width: 600px) {
+
+	.wpdiy-item {
+		width: 33.33333%;
+	}
+
+	.super-heading {
+		display: block;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	.super-header .menu {
+		text-align: right;
+	}
+}
+
+
+
+.lynda-logo a {
+  display: block;
+  background-image: url("http://leafandmortar.com/wp-content/plugins/wpdiy/img/lynda.png");
+  height: 39px;
+  width: 132px;
+}
+
+.super-header {
+	color: white;
+}
+
+.super-header a {
+	color: white;
+}
+
+.super-header a:hover,
+.super-header a:focus {
+	color: #2390bb;
+	text-decoration: none;
+}
+
+.icon-info {
+	font-size: 1.6em;
+}
+/* ****************************************************
+  * Super footer
+  * ************************************************** */
+
+.super-footer {
+ 	display: none;
+ 	padding: 2em;
+ 	background: black;
+ 	border-top: 1px solid #2b2b2b;
+}
+
+.super-footer .WPDIY-info,
+.super-footer .disclaimer {
+ 	max-width: 600px;
+ 	margin: 0 auto;
+ 	padding-bottom: 1.5em;
+}
+
+.super-footer .disclaimer p {
+	font-size: 1.2em;
+	font-style: italic;
+	line-height: inherit;
+}
+
+.super-footer p {
+	line-height: inherit;
+}
+
+.super-footer h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: .6em;
+}
+
+.WPDIY-more {
+	padding-top: 1em;
+	text-align: center;
+}
+
+.WPDIY-more a {
+	display: inline-block;
+	border: 3px solid white;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: .6em 1em;
+	margin: 0 auto;
+}
+
+.WPDIY-more a:hover {
+	background: white;
+	color: black;
+}
